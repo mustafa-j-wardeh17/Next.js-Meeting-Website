@@ -16,8 +16,11 @@ const EndCallButton = () => {
 
   // https://getstream.io/video/docs/react/guides/call-and-participant-state/#participant-state-3
   const { useLocalParticipant } = useCallStateHooks();
+
+  // Take The Local Participant User
   const localParticipant = useLocalParticipant();
 
+  // Must Be The Owner Of The Meet To End It Successfully
   const isMeetingOwner =
     localParticipant &&
     call.state.createdBy &&

@@ -15,14 +15,20 @@ const MeetingSetup = ({
 }: {
   setIsSetupComplete: (value: boolean) => void;
 }) => {
-  // https://getstream.io/video/docs/react/guides/call-and-participant-state/#call-state
+
+  // to get start and end of meeting
   const { useCallEndedAt, useCallStartsAt } = useCallStateHooks();
   const callStartsAt = useCallStartsAt();
   const callEndedAt = useCallEndedAt();
+
+  // call not started
   const callTimeNotArrived =
     callStartsAt && new Date(callStartsAt) > new Date();
+
+  // call end
   const callHasEnded = !!callEndedAt;
 
+  // get call from provider
   const call = useCall();
 
   if (!call) {
@@ -31,7 +37,6 @@ const MeetingSetup = ({
     );
   }
 
-  // https://getstream.io/video/docs/react/ui-cookbook/replacing-call-controls/
   const [isMicCamToggled, setIsMicCamToggled] = useState(false);
 
   useEffect(() => {
@@ -62,6 +67,7 @@ const MeetingSetup = ({
   return (
     <div className="flex h-screen w-full flex-col items-center justify-center gap-3 text-white">
       <h1 className="text-center text-2xl font-bold">Setup</h1>
+      {/* box of video */}
       <VideoPreview />
       <div className="flex h-16 items-center justify-center gap-3">
         <label className="flex items-center justify-center gap-2 font-medium">
@@ -72,6 +78,7 @@ const MeetingSetup = ({
           />
           Join with mic and camera off
         </label>
+        {/* audio video settings  */}
         <DeviceSettings />
       </div>
       <Button
