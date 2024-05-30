@@ -9,8 +9,8 @@ import { useUser } from '@clerk/nextjs'
 import { Call, useStreamVideoClient } from '@stream-io/video-react-sdk'
 import { useToast } from './ui/use-toast'
 import { Textarea } from "@/components/ui/textarea"
-import { Input } from './ui/input'
 import ReactDatePicker from 'react-datepicker';
+import { Input } from './ui/input'
 
 const initialValues = {
   dateTime: new Date(),
@@ -23,7 +23,7 @@ const MeetingTypeList = () => {
   const [meetingState, setMeetingState] = useState<'isScheduleMeeting' | 'isJoiningMeeting' | 'isInstantMeeting' | undefined>(undefined)
 
   // Just for checking
-  const [values,setValues] = useState(initialValues);
+  const [values, setValues] = useState(initialValues);
 
   const [callDetail, setCallDetail] = useState<Call>();
   const client = useStreamVideoClient();
@@ -45,7 +45,7 @@ const MeetingTypeList = () => {
       // *****Creating Call Meeting*****
       // *******************************
       // get client call with call type and specific id
-      const call = client.call('default',id);
+      const call = client.call('default', id);
       if (!call) throw new Error('Failed to create meeting');
 
       // time of creating meet
@@ -121,7 +121,7 @@ const MeetingTypeList = () => {
         buttonText='Start Meeting'
         handleClick={createMeeting}
       />
-       {!callDetail ? (
+      {!callDetail ? (
         <MeetingModal
           isOpen={meetingState === 'isScheduleMeeting'}
           onClose={() => setMeetingState(undefined)}
@@ -161,6 +161,7 @@ const MeetingTypeList = () => {
           onClose={() => setMeetingState(undefined)}
           title="Meeting Created"
           handleClick={() => {
+            // To Copy meeting Link From Clipboard
             navigator.clipboard.writeText(meetingLink);
             toast({ title: 'Link Copied' });
           }}

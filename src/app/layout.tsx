@@ -8,6 +8,7 @@ import { Toaster } from "@/components/ui/toaster";
 // stream styles for screen buttons and share side 
 import "@stream-io/video-react-sdk/dist/css/styles.css";
 import "react-datepicker/dist/react-datepicker.css";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {

@@ -5,8 +5,45 @@
 * {
   margin: 0;
   padding: 0;
+  color-scheme: dark;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
+
+/* ******************** */
+/* ChatGPT Scroll Style */
+/* ******************** */
+
+/* Customize the scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 12px;
+  /* Adjust the width of the scrollbar */
+}
+
+/* Track of the scrollbar */
+::-webkit-scrollbar-track {
+  background: #1c1f2e;
+  /* Adjust the background color of the track */
+  border-radius: 10px;
+  /* Add border radius to the track */
+}
+
+/* Handle of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background: #545974;
+  /* Adjust the color of the handle */
+  border-radius: 10px;
+  /* Add border radius to the handle */
+  border: 3px solid #252A41;
+  /* Add a border around the handle to create space between handle and track */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6a6c70;
+  /* Change color of the handle on hover */
+}
+
 
 /* ======== stream css overrides ======== */
 .str-video__call-stats {
@@ -31,7 +68,7 @@
 }
 
 .str-video__participant-list {
-  background-color: #1c1f2e;
+  background-color: #161925;
   padding: 10px;
   border-radius: 10px;
   color: white;
@@ -47,6 +84,7 @@
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
+
 .glassmorphism2 {
   background: rgba(18, 17, 17, 0.25);
   backdrop-filter: blur(8px);
@@ -58,12 +96,15 @@
 .cl-userButtonPopoverActionButtonIcon {
   color: white;
 }
-.cl-socialButtonsProviderIcon__github{
-  filter:invert(1);
+
+.cl-socialButtonsProviderIcon__github {
+  filter: invert(1);
 }
+
 .cl-logoBox {
   height: 40px;
 }
+
 .cl-dividerLine {
   background: #252a41;
   height: 2px;
@@ -76,6 +117,7 @@
 .cl-internal-wkkub3 {
   color: white;
 }
+
 .cl-userButtonPopoverActionButton {
   color: white;
 }
@@ -100,6 +142,8 @@
   display: block;
   animation: show 0.7s forwards linear;
 }
+
+
 
 @keyframes show {
   0% {

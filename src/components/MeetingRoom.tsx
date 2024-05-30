@@ -19,7 +19,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from './ui/dropdown-menu';
-import Loader from './Loader';
+import Loader from './Loader'; 
 import EndCallButton from './EndCallButton';
 import { cn } from '@/lib/utils';
 
@@ -29,6 +29,11 @@ const MeetingRoom = () => {
 
   // For Checking Personal Meeting
   const searchParams = useSearchParams();
+  // *****************************************************************
+  // **            !! convert it back to a boolean value             *
+  // **                 if value 'personal' => true                  *                    
+  // ** if value null or any false fale that !== personal  => false  *
+  // ***************************************************************** 
   const isPersonalRoom = !!searchParams.get('personal');
 
   const router = useRouter();
@@ -73,7 +78,7 @@ const MeetingRoom = () => {
         </div>
       </div>
       {/* Video Layout And Call Controls */}
-      <div className="fixed bottom-0 flex w-full items-center justify-center gap-5">
+      <div className="fixed bottom-0 flex w-full items-center justify-center sm:gap-5 gap-3 flex-wrap sm:py-2 sm:px-0 px-1 py-1 sm:mb-0 mb-2  ">
         {/* Call Controls Contain video Audio Settings, Emoji Button, Share Screen ,Record Meet Button And Leave Meet Button  */}
         <CallControls onLeave={() => router.push(`/`)} />
 

@@ -1,10 +1,6 @@
 import {
     Dialog,
     DialogContent,
-    DialogDescription,
-    DialogHeader,
-    DialogTitle,
-    DialogTrigger,
 } from "@/components/ui/dialog"
 import { cn } from "@/lib/utils";
 import Image from "next/image";
@@ -35,6 +31,7 @@ const MeetingModal = ({ isOpen, onClose, title, className, children, handleClick
                         )
                     }
                     <h1 className={cn("font-bold text-3xl leading-[43px]", className)}>{title}</h1>
+                    {children}
                     <Button
                         onClick={handleClick}
                         className="bg-blue-1 focus-visible:ring-0 focus-visible:ring-offset-0"
