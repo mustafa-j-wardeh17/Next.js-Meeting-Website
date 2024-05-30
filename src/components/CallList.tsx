@@ -4,8 +4,8 @@ import { useGetCalls } from '../../hooks/useGetCalls'
 import { useRouter } from 'next/navigation'
 import { Call, CallRecording } from '@stream-io/video-react-sdk'
 import MeetingCard from './MeetingCard'
-import { Loader } from 'lucide-react'
 import { useToast } from './ui/use-toast'
+import Loader from './Loader'
 const CallList = ({ type }: { type: "ended" | "upcoming" | "recordings" }) => {
     const router = useRouter();
     const toast = useToast()
