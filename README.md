@@ -14,12 +14,41 @@
 <h2>Features</h2>
 
 <ul>
-  <li><strong>User Authentication</strong>: Secure user login and registration using Clerk.</li>
-  <li><strong>Meeting Dashboard</strong>: Centralized view for upcoming, previous, and personal meetings.</li>
-  <li><strong>Recordings</strong>: Access to meeting recordings.</li>
-  <li><strong>Responsive Layout</strong>: Sidebar navigation and top navbar for easy access to different sections.</li>
-  <li><strong>Modern UI</strong>: Utilizes Radix UI components and TailwindCSS for a sleek interface.</li>
+  <li><strong>Secure User Authentication</strong>: Utilize Clerk for user registration and login, ensuring secure access to the app.</li>
+  <li><strong>Centralized Meeting Dashboard</strong>: View and manage all your meetings from a single dashboard. It includes sections for:
+    <ul>
+      <li>Upcoming Meetings: Schedule and view upcoming meetings.</li>
+      <li>Previous Meetings: Access details of past meetings.</li>
+      <li>Personal Room: Host private meetings in a dedicated personal room.</li>
+      <li>Recordings: View and manage meeting recordings.</li>
+    </ul>
+  </li>
+  <li><strong>Modern UI Components</strong>: Enhanced user experience with ShadCN UI components for alert dialogs, dialogs, dropdown menus, and toasts.</li>
+  <li><strong>Responsive Layout</strong>: Features a sidebar and top navbar for easy navigation across the app.</li>
+  <li><strong>Stream Integration</strong>: Seamless video conferencing capabilities using Stream SDKs.</li>
 </ul>
+
+<h2>Technology Stack</h2>
+
+<p>PS Meeting App is built using a modern stack of web technologies:</p>
+
+<ul>
+  <li><strong>Next.js</strong>: Framework for React applications, enabling server-side rendering and static site generation.</li>
+  <li><strong>React</strong>: JavaScript library for building user interfaces.</li>
+  <li><strong>TypeScript</strong>: Strongly typed programming language that builds on JavaScript.</li>
+  <li><strong>TailwindCSS</strong>: Utility-first CSS framework for styling.</li>
+  <li><strong>ShadCN UI</strong>: Collection of UI components for React applications, used for dialogs, alerts, dropdowns, and toasts.</li>
+  <li><strong>Stream SDK</strong>: Provides video conferencing and real-time communication capabilities.</li>
+</ul>
+
+<h2>Screenshots</h2>
+
+<p>Here are some screenshots of the PS Meeting App in action:</p>
+
+<p align="center">
+  <img src="https://example.com/screenshot-dashboard.png" alt="Dashboard Screenshot" width="600">
+  <img src="https://example.com/screenshot-authentication.png" alt="Authentication Screenshot" width="600">
+</p>
 
 <h2>Getting Started</h2>
 
@@ -87,91 +116,20 @@ npm start</code></pre>
   <li><code>npm run lint</code>: Run ESLint to lint the codebase.</li>
 </ul>
 
-<h2>Dependencies</h2>
+<h2>Upcoming Features</h2>
 
-<table>
-  <thead>
-    <tr>
-      <th>Package</th>
-      <th>Version</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="https://clerk.com">@clerk/nextjs</a></td>
-      <td>^5.1.2</td>
-    </tr>
-    <tr>
-      <td><a href="https://www.radix-ui.com/docs/primitives/components/alert-dialog">@radix-ui/react-alert-dialog</a></td>
-      <td>^1.0.5</td>
-    </tr>
-    <tr>
-      <td><a href="https://www.radix-ui.com/docs/primitives/components/dialog">@radix-ui/react-dialog</a></td>
-      <td>^1.0.5</td>
-    </tr>
-    <tr>
-      <td><a href="https://www.radix-ui.com/docs/primitives/components/dropdown-menu">@radix-ui/react-dropdown-menu</a></td>
-      <td>^2.0.6</td>
-    </tr>
-    <tr>
-      <td><a href="https://www.radix-ui.com/docs/primitives/components/slot">@radix-ui/react-slot</a></td>
-      <td>^1.0.2</td>
-    </tr>
-    <tr>
-      <td><a href="https://www.radix-ui.com/docs/primitives/components/toast">@radix-ui/react-toast</a></td>
-      <td>^1.1.5</td>
-    </tr>
-    <tr>
-      <td><a href="https://getstream.io">@stream-io/node-sdk</a></td>
-      <td>^0.2.3</td>
-    </tr>
-    <tr>
-      <td><a href="https://getstream.io">@stream-io/video-react-sdk</a></td>
-      <td>^1.0.12</td>
-    </tr>
-    <tr>
-      <td><a href="https://www.npmjs.com/package/@types/react-datepicker">@types/react-datepicker</a></td>
-      <td>^6.2.0</td>
-    </tr>
-    <tr>
-      <td><a href="https://www.npmjs.com/package/class-variance-authority">class-variance-authority</a></td>
-      <td>^0.7.0</td>
-    </tr>
-    <tr>
-      <td><a href="https://www.npmjs.com/package/clsx">clsx</a></td>
-      <td>^2.1.1</td>
-    </tr>
-    <tr>
-      <td><a href="https://www.npmjs.com/package/lucide-react">lucide-react</a></td>
-      <td>^0.379.0</td>
-    </tr>
-    <tr>
-      <td><a href="https://nextjs.org">next</a></td>
-      <td>14.2.3</td>
-    </tr>
-    <tr>
-      <td><a href="https://reactjs.org">react</a></td>
-      <td>^18</td>
-    </tr>
-    <tr>
-      <td><a href="https://www.npmjs.com/package/react-datepicker">react-datepicker</a></td>
-      <td>^6.9.0</td>
-    </tr>
-    <tr>
-      <td><a href="https://reactjs.org">react-dom</a></td>
-      <td>^18</td>
-    </tr>
-    <tr>
-      <td><a href="https://react-icons.github.io/react-icons">react-icons</a></td>
-      <td>^5.2.1</td>
-    </tr>
-    <tr>
-      <td><a href="https://www.npmjs.com/package/tailwind-merge">tailwind-merge</a></td>
-      <td>^2.3.0</td>
-    </tr>
-    <tr>
-      <td><a href="https://www.npmjs.com/package/tailwindcss-animate">tailwindcss-animate</a></td>
-      <td>^1.0.7</td>
-    </tr>
-  </tbody>
-</table
+<p>We are continually working to improve the PS Meeting App. Here are some features that are in the pipeline:</p>
+
+<ul>
+  <li><strong>Enhanced Meeting Scheduling</strong>: Advanced scheduling options with calendar integration.</li>
+  <li><strong>Improved Analytics</strong>: Detailed analytics for meeting performance and user engagement.</li>
+  <li><strong>Customizable Meeting Rooms</strong>: Personalize your meeting room settings and layouts.</li>
+</ul>
+
+<h2>Getting Involved</h2>
+
+<p>If you want to contribute to the PS Meeting App or report issues, please visit our <a href="https://github.com/your-username/ps-meeting-app/issues">GitHub Issues</a> page. We welcome contributions and feedback to make this app better for everyone!</p>
+
+<p align="center">
+  <strong>Happy Meeting!</strong>
+</p>
