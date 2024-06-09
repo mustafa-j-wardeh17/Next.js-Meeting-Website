@@ -21,29 +21,6 @@
   <li><strong>Modern UI</strong>: Utilizes Radix UI components and TailwindCSS for a sleek interface.</li>
 </ul>
 
-<h2>Project Structure</h2>
-
-<pre>
-<code>
-.
-├── app/
-│   ├── auth/                 # Folder for authentication
-│   │   ├── register/         # Registration page
-│   │   ├── login/            # Login page
-│   ├── dashboard/            # Main layout with sidebar and navbar
-│   │   ├── index.tsx         # Home page
-│   │   ├── upcoming.tsx      # Upcoming meetings
-│   │   ├── previous.tsx      # Previous meetings
-│   │   ├── recordings.tsx    # Meeting recordings
-│   │   ├── personal-room.tsx # Personal meeting room
-│   ├── components/           # Reusable components
-├── public/                   # Public assets
-├── styles/                   # Styling files
-├── package.json
-├── README.md
-</code>
-</pre>
-
 <h2>Getting Started</h2>
 
 <h3>Prerequisites</h3>
@@ -86,8 +63,8 @@ npm start</code></pre>
 <ul>
   <li><strong>Authentication:</strong>
     <ul>
-      <li>Visit <code>/auth/register</code> to create a new account.</li>
-      <li>Visit <code>/auth/login</code> to log in.</li>
+      <li>Visit <code>/auth/sign-up</code> to create a new account.</li>
+      <li>Visit <code>/auth/sign-in</code> to log in.</li>
     </ul>
   </li>
   <li><strong>Dashboard:</strong>
