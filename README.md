@@ -63,7 +63,7 @@
 
 <ol>
   <li><strong>Clone the repository:</strong>
-    <pre><code>git clone https://github.com/your-username/ps-meeting-app.git
+    <pre><code>git clone https://github.com/mustafa-j-wardeh17/ps-meeting-app.git
 cd ps-meeting-app</code></pre>
   </li>
   <li><strong>Install dependencies:</strong>
